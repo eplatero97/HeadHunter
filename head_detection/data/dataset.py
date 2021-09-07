@@ -13,7 +13,6 @@ import torch.utils.data as data
 from albumentations import BboxParams, Compose, HorizontalFlip
 from albumentations.pytorch import ToTensor
 from torchvision.ops.boxes import clip_boxes_to_image
-
 from imageio import imread
 
 
