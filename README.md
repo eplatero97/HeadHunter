@@ -40,7 +40,7 @@ Run below instructions:
 2. `evaluate.py` evaluates over the validation/test set using AP, MMR, F1, MODA and MODP metrics. 
 3. `test.py` runs the detector over a "bunch of images" in the testing set for qualitative evaluation.
 
-> **NOTE: ** Instructions to download pre-trained weights of HeadHunter is discussed [here]([The model weight of headhunter? · Issue #1 · Sentient07/HeadHunter--T (github.com)](https://github.com/Sentient07/HeadHunter--T/issues/1)).
+> **NOTE:** Instructions to download pre-trained weights of HeadHunter is discussed [here](https://github.com/Sentient07/HeadHunter--T/issues/1).
 
 ## Config file
 
