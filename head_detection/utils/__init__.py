@@ -8,7 +8,7 @@ import cv2
 import numpy as np
 import torch
 import torch.utils.data as data
-from scipy.misc import imsave
+from imageio import imsave
 from torchvision import transforms
 from tqdm import tqdm
 from albumentations.pytorch import ToTensor

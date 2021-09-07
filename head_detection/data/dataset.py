@@ -14,10 +14,8 @@ from albumentations import BboxParams, Compose, HorizontalFlip
 from albumentations.pytorch import ToTensor
 from torchvision.ops.boxes import clip_boxes_to_image
 
-try:
-    from scipy.misc import imread
-except ImportError:
-    from scipy.misc.pilutil import imread
+from imageio import imread
+
 
 class HeadDataset(data.Dataset):
     """

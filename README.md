@@ -2,19 +2,27 @@
 
 Code for the head detector (HeadHunter) proposed in our CVPR 2021 paper `Tracking Pedestrian Heads in Dense Crowd`. The `head_detection` module can be installed using `pip` in order to be able to plug-and-play with HeadHunter-T.
 
+## Improvements
+
+From the master branch, I made the following primary change:
+
+* Modified `env_super.yml` file to contain corresponding `pytorch`, `cudatoolkit`, and `albumentations` dependencies.
+
 ## Requirements
 
 1. Nvidia Driver >= 418
+2. CUDA 10.2 
+3. pytorch version 1.6.0
+4. All further dependencies are listed in `env_super.yml`
 
-2. Cuda 10.0 and compaitible CudNN
+## Installation
 
-3. Python packages : To install the required python packages;
-	`conda env create -f head_detection.yml`.
+Run below instructions:
 
-4. Use the anaconda environment `head_detection` by activating it, `source activate head_detection` or `conda activate head_detection`.
+* `conda env create -f env_super.yml`
+* `conda activate head_hunter`
 
-5. Alternatively pip can be used to install required packages using `pip install -r requirements.txt` or update your existing environment with the aforementioned yml file.
-
+> **NOTE:** Installation has only been tested on Linux OS 
 
 ## Training
 
@@ -32,7 +40,10 @@ Code for the head detector (HeadHunter) proposed in our CVPR 2021 paper `Trackin
 2. `evaluate.py` evaluates over the validation/test set using AP, MMR, F1, MODA and MODP metrics. 
 3. `test.py` runs the detector over a "bunch of images" in the testing set for qualitative evaluation.
 
+> **NOTE: ** Instructions to download pre-trained weights of HeadHunter is discussed [here]([The model weight of headhunter? · Issue #1 · Sentient07/HeadHunter--T (github.com)](https://github.com/Sentient07/HeadHunter--T/issues/1)).
+
 ## Config file
+
 A config file is necessary for all training. It's built to ease the number of arg variable passed during each execution. Each sub-sections are as elaborated below.
 
 1. DATASET
@@ -75,5 +86,4 @@ This codebase borrows a noteable portion from pytorch-vision owing to the fact s
     pages     = {3865-3875}
 }
 ```
-
 

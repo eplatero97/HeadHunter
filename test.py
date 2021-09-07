@@ -20,10 +20,7 @@ from head_detection.models.head_detect import customRCNN
 from head_detection.utils import get_state_dict, plot_ims, to_torch
 from head_detection.vision.utils import init_distributed_mode
 
-try:
-    from scipy.misc import imread, imsave
-except ImportError:
-    from scipy.misc.pilutil import imread
+from imageio import imread, imsave 
 
 parser = argparse.ArgumentParser(description='Testing script')
 parser.add_argument('--test_dataset', help='Dataset .txt file')
