@@ -38,7 +38,7 @@ parser.add_argument('--ext', default='.jpg', type=str, help='Image file extensio
 parser.add_argument('--outfile', help='Location to save results in mot format')
 
 parser.add_argument('--backbone', default='resnet50', help='Backbone network mobile0.25 or resnet50')
-parser.add_argument('--context', help='Whether to use context model')
+parser.add_argument('--context', default = 'cpm', help='Whether to use context model')
 parser.add_argument('--use_deform', default=False, type=bool, help='Use Deformable SSH')
 parser.add_argument('--det_thresh', default=0.3, type=float, help='Number of workers used in dataloading')
 parser.add_argument('--default_filter', default=False, type=bool, help='Use old filters')
