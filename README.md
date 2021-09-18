@@ -4,7 +4,7 @@ Code for the head detector (HeadHunter) proposed in our CVPR 2021 paper `Trackin
 
 ## Improvements
 
-From the master branch, the primary change is that the:
+From the master branch, the primary change is that:
 
 * The `env_super.yml` file was modified to contain corresponding `pytorch`, `cudatoolkit`, and `albumentations` dependencies.
 
