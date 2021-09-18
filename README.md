@@ -4,9 +4,9 @@ Code for the head detector (HeadHunter) proposed in our CVPR 2021 paper `Trackin
 
 ## Improvements
 
-From the master branch, I made the following primary change:
+From the master branch, the primary change is that the:
 
-* Modified `env_super.yml` file to contain corresponding `pytorch`, `cudatoolkit`, and `albumentations` dependencies.
+* The `env_super.yml` file was modified to contain corresponding `pytorch`, `cudatoolkit`, and `albumentations` dependencies.
 
 ## Requirements
 
@@ -40,7 +40,7 @@ Run below instructions:
 2. `evaluate.py` evaluates over the validation/test set using AP, MMR, F1, MODA and MODP metrics. 
 3. `test.py` runs the detector over a "bunch of images" in the testing set for qualitative evaluation.
 
-> **NOTE:** Instructions to download pre-trained weights of HeadHunter is discussed [here](https://github.com/Sentient07/HeadHunter--T/issues/1).
+> **NOTE:** Instructions to download pre-trained weights of HeadHunter is discussed [here](https://github.com/Sentient07/HeadHunter--T/issues/1). To load the weights correctly, make sure to set `"resent50"` as backbone and `"cpm"` as context in `test.py`.
 
 ## Config file
 
